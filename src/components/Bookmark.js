@@ -36,7 +36,7 @@ function Bookmark() {
   return (
     <div>
          <h2 style={{justifyContent:"center",display:"flex"}}><u>All Bookmarks</u></h2>
-                {renderBookmarks || "Nothing in Bookmar"}
+                {renderBookmarks}
           
     </div>
   )

@@ -35,8 +35,9 @@ function Home({changeQuote,getRandomQuote}) {
             dispatch(changeBookMarkBtn(!isBookMarked))
         }
         else{
-            dispatch(removeBookmark(randomQuote))
+            dispatch(removeBookmark(randomQuote._id))
             dispatch(changeBookMarkBtn(!isBookMarked))
+        
         }
     }
 
