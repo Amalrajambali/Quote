@@ -13,9 +13,15 @@ function HomePage() {
         axios.get("https://api.quotable.io/tags").then(response=>dispatch(addAlltags(response.data)))
     },[])
 
+    async function changeQuote(tagName)
+    {
+        const response =await axios.get(`https://api.quotable.io/quotes/random?tags=${tagName}`)
+        return response.data
+    }
+
   return (
     <div>
-        <Home/>
+        <Home changeQuote={changeQuote}/>
     </div>
   )
 }
