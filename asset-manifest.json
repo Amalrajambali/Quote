@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/Quote/static/js/main.61cbf5a5.js",
+    "index.html": "/Quote/index.html",
+    "main.61cbf5a5.js.map": "/Quote/static/js/main.61cbf5a5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.61cbf5a5.js"
+  ]
+}
