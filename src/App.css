@@ -61,3 +61,6 @@ select{
     border-radius: 16px;
     padding-left: 8px;
 }
+option{
+    color: black;
+}

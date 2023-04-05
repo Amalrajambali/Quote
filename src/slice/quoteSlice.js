@@ -4,14 +4,14 @@ const quoteSlice=createSlice({
     name:"quote",
     initialState:{
         randomQuote:[],
-        Alltags:[]
+        allTags:[]
     },
     reducers:{
         onchangeTag(state,action){
             state.randomQuote=action.payload;
         },
         addAlltags(state,action){
-            state.Alltags=action.payload;
+            state.allTags=action.payload;
         }
     }
 })
