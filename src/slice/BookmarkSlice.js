@@ -8,11 +8,11 @@ const bookmarkSlice=createSlice({
         addBookmark(state,action){
             state.push(action.payload);
         },
-        removeBookmark(state,action){
-            state.splice(action.payload,1);
+        removeBookmark(state,action){  
+            //f
         }
     }
 })
 
 export {bookmarkSlice};
-export const{addBookmark,removeBookmark}=bookmarkSlice.actions
+export const {addBookmark,removeBookmark}=bookmarkSlice.actions

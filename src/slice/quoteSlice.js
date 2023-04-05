@@ -4,7 +4,8 @@ const quoteSlice=createSlice({
     name:"quote",
     initialState:{
         randomQuote:[],
-        allTags:[]
+        allTags:[],
+        isBookMarked:false,
     },
     reducers:{
         onchangeTag(state,action){
@@ -12,9 +13,12 @@ const quoteSlice=createSlice({
         },
         addAlltags(state,action){
             state.allTags=action.payload;
+        },
+        changeBookMarkBtn(state,action){
+            state.isBookMarked=action.payload;
         }
     }
 })
 
 export {quoteSlice};
-export const {onchangeTag,addAlltags}=quoteSlice.actions
+export const {onchangeTag,addAlltags,changeBookMarkBtn}=quoteSlice.actions

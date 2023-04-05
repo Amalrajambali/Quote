@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { quoteSlice ,onchangeTag,addAlltags} from "../slice/quoteSlice";
+import { quoteSlice ,onchangeTag,addAlltags,changeBookMarkBtn} from "../slice/quoteSlice";
 import { bookmarkSlice ,addBookmark,removeBookmark} from "../slice/BookmarkSlice";
 
 const store=configureStore({
@@ -7,4 +7,4 @@ const store=configureStore({
 })
 
 
-export {store,onchangeTag,addAlltags,addBookmark,removeBookmark}
+export {store,onchangeTag,addAlltags,addBookmark,removeBookmark,changeBookMarkBtn}
