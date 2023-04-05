@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { AiFillDelete } from "react-icons/ai";
-import { removeBookmark } from '../store';
+import { removeBookmark ,changeBookMarkBtn} from '../store';
 
 function Bookmark() {
 
@@ -11,8 +11,8 @@ function Bookmark() {
     })
 
     const bookmarkHandler=(item)=>{
-        console.log(item._id)
-;        dispatch(removeBookmark(item.id))
+         dispatch(changeBookMarkBtn(false))
+;        dispatch(removeBookmark(item._id))
     }
 
     const renderBookmarks=bookmarks.map((item)=>{

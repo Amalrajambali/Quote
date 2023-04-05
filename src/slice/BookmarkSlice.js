@@ -9,7 +9,8 @@ const bookmarkSlice=createSlice({
             state.push(action.payload);
         },
         removeBookmark(state,action){  
-            //f
+            const filterBookmark=state.filter(item=>item._id!==action.payload)
+            return filterBookmark;
         }
     }
 })
